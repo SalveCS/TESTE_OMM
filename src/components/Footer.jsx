@@ -3,7 +3,7 @@ import logoOMM from '../assets/Logotipo_OMM_v_Branco.png';
 import cascudoLogo from '../assets/Cascudo_LogoMarca_Branco.png';
 import energiaLogo from '../assets/Logo_Energia_Salgada_bRANCO.png';
 
-const Footer = ({ onPageChange }) => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const scrollToSection = (sectionId) => {
@@ -170,18 +170,12 @@ const Footer = ({ onPageChange }) => {
               <span>© {currentYear} Onda Mar e Mato. Todos os direitos reservados.</span>
             </div>
             <div className="flex items-center space-x-6 text-gray-400 text-sm">
-              <button 
-                onClick={() => onPageChange && onPageChange('privacidade')}
-                className="hover:text-cyan-300 transition-colors"
-              >
+              <a href="/politica-de-privacidade.html" className="hover:text-cyan-300 transition-colors">
                 Política de Privacidade
-              </button>
-              <button 
-                onClick={() => onPageChange && onPageChange('termos')}
-                className="hover:text-cyan-300 transition-colors"
-              >
+              </a>
+              <a href="/termos-de-uso.html" className="hover:text-cyan-300 transition-colors">
                 Termos de Uso
-              </button>
+              </a>
               <span className="text-cyan-400 font-medium">
                 #EnergiaSalgada
               </span>

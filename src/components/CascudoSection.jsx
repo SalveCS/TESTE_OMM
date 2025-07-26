@@ -18,7 +18,7 @@ const CascudoSection = () => {
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Propósito Significativo",
-      description: "Ao usá,lo, os surfistas podem se sentir satisfeitos por estarem fazendo sua parte para proteger o meio ambiente."
+      description: "Ao usá-lo, os surfistas podem se sentir satisfeitos por estarem fazendo sua parte para proteger o meio ambiente."
     },
     {
       icon: <Recycle className="w-8 h-8" />,
@@ -41,7 +41,7 @@ const CascudoSection = () => {
             Surfe limpo, consciência tranquila!
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            O Cascudo é mais que um produto , é uma revolução na forma como os surfistas 
+            O Cascudo é mais que um produto, é uma revolução na forma como os surfistas 
             interagem com o oceano. Uma ferramenta que transforma cada sessão de surf 
             em um ato de preservação ambiental.
           </p>
@@ -89,7 +89,7 @@ const CascudoSection = () => {
             </div>
           </div>
 
-          {/* Right Image , Cascudo na prancha */}
+          {/* Right Image - Cascudo na prancha */}
           <div className="relative">
             <img 
               src={cascudoProduct} 
@@ -162,19 +162,14 @@ const CascudoSection = () => {
         {/* Call to Action */}
         <div className="text-center mt-16">
           <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-            Junte,se a nós na promoção da sustentabilidade
+            Junte-se a nós na promoção da sustentabilidade
           </h3>
           <p className="text-gray-300 text-lg mb-8">
             E na luta contra a poluição marinha
           </p>
-          <a 
-            href="https://www.instagram.com/ondamaremato/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 hover-scale shadow-lg"
-          >
+          <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white px-12 py-4 rounded-full font-bold text-lg transition-all duration-300 hover-scale shadow-lg">
             Faça Parte do Movimento
-          </a>
+          </button>
         </div>
       </div>
     </section>

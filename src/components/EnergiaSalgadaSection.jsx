@@ -71,7 +71,7 @@ const EnergiaSalgadaSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className={`transition,all duration-1000 ${isVisible ? 'opacity,100 translate,y,0' : 'opacity,0 translate-y-10'}`}>
+          <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <img 
               src={energiaLogo} 
               alt="Energia Salgada" 
@@ -93,7 +93,7 @@ const EnergiaSalgadaSection = () => {
         {/* Main Content */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left Content */}
-          <div className={`space-y-8 transition,all duration,1000 delay-300 ${isVisible ? 'opacity,100 translate,x,0' : 'opacity,0 ,translate-x-10'}`}>
+          <div className={`space-y-8 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="glass-effect rounded-2xl p-8">
               <h3 className="text-3xl font-bold text-white mb-6">
                 O Conceito que Move Oceanos
@@ -105,8 +105,7 @@ const EnergiaSalgadaSection = () => {
                 elementos da natureza em uma sinfonia aquática.
               </p>
               <p className="text-gray-200 text-lg leading-relaxed mb-8">
-                Quando você entra no mar, não está apenas surfando , está se 
-                conectando com uma energia ancestral, pura e transformadora. 
+             Quando você entra no mar, não está apenas surfando, está se conectando com uma energia ancestral, pura e transformadora. 
                 É essa energia que nos move, nos inspira e nos faz querer 
                 proteger o que amamos.
               </p>
@@ -125,22 +124,22 @@ const EnergiaSalgadaSection = () => {
           </div>
 
           {/* Right Animation Area */}
-          <div className={`relative transition,all duration,1000 delay-500 ${isVisible ? 'opacity,100 translate,x,0' : 'opacity,0 translate-x-10'}`}>
+          <div className={`relative transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="relative">
               {/* Floating Elements */}
               <div className="relative h-96 w-full">
                 {energyElements.map((element, index) => {
                   const positions = [
-                    'top,4 left,4',
-                    'top,4 right,4', 
-                    'bottom,4 left,4',
-                    'bottom,4 right,4'
+                    'top-4 left-4',
+                    'top-4 right-4', 
+                    'bottom-4 left-4',
+                    'bottom-4 right-4'
                   ];
                   
                   return (
                     <div 
                       key={index}
-                      className={`absolute ${positions[index]} glass-effect rounded,xl p,4 w,40 hover,scale transition,all duration,300 hover:border,cyan,400/50 border border-white/20`}
+                      className={`absolute ${positions[index]} glass-effect rounded-xl p-4 w-40 hover-scale transition-all duration-300 hover:border-cyan-400/50 border border-white/20`}
                       style={{
                         animation: `float ${3 + index * 0.5}s ease-in-out infinite`,
                         animationDelay: `${index * 0.5}s`
@@ -164,15 +163,14 @@ const EnergiaSalgadaSection = () => {
         </div>
 
         {/* Philosophy Section */}
-        <div className={`text-center transition,all duration,1000 delay-700 ${isVisible ? 'opacity,100 translate,y,0' : 'opacity,0 translate-y-10'}`}>
+        <div className={`text-center transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="max-w-4xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-8">
-              "Sinta a energia, deslize com propósito"
+              Sinta a energia, deslize com propósito
             </h3>
             <p className="text-xl text-gray-200 leading-relaxed mb-12">
               Descubra o verdadeiro significado de estar em sintonia com o mundo 
-              ao seu redor. A Energia Salgada não é apenas um conceito , é uma 
-              experiência que transforma cada momento no mar em algo extraordinário.
+              ao seu redor. A Energia Salgada não é apenas um conceito, é uma experiência que transforma cada momento no mar em algo extraordinário.
             </p>
             
             {/* Interactive Elements */}

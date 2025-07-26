@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
@@ -6,12 +6,8 @@ import CascudoSection from './components/CascudoSection';
 import EnergiaSalgadaSection from './components/EnergiaSalgadaSection';
 import AboutSection from './components/AboutSection';
 import Footer from './components/Footer';
-import TermosUso from './components/TermosUso';
-import PoliticaPrivacidade from './components/PoliticaPrivacidade';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('home');
-
   useEffect(() => {
     // Smooth scroll behavior for the entire page
     document.documentElement.style.scrollBehavior = 'smooth';
@@ -44,34 +40,18 @@ function App() {
     };
   }, []);
 
-  const handlePageChange = (page) => {
-    setCurrentPage(page);
-    window.scrollTo(0, 0);
-  };
-
-  const renderPage = () => {
-    switch (currentPage) {
-      case 'termos':
-        return <TermosUso onBack={() => handlePageChange('home')} />;
-      case 'privacidade':
-        return <PoliticaPrivacidade onBack={() => handlePageChange('home')} />;
-      default:
-        return (
-          <div className="App">
-            <Header />
-            <main>
-              <HeroSection />
-              <CascudoSection />
-              <EnergiaSalgadaSection />
-              <AboutSection />
-            </main>
-            <Footer onPageChange={handlePageChange} />
-          </div>
-        );
-    }
-  };
-
-  return renderPage();
+  return (
+    <div className="App">
+      <Header />
+      <main>
+        <HeroSection />
+        <CascudoSection />
+        <EnergiaSalgadaSection />
+        <AboutSection />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
